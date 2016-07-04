@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      Z Learns Pg9
+    </title>
+  </head>
+  <body>
+    <div class="container1">
+      <h1 class="title">
+        Sizing Elements, Flexbox, Adding Images
+      </h1>
+      <br><br>
+      <div class="leftpane">
+        <h2><span class="bling">Learning how to be Flexible (or display purposes only.)</span>
+        </h2>
+        <p>
+            On a previous page, we saw the rule 'display: flex' added to 'element.style', which adds the CSS directly to the 'div' element on the left-hand side of the development tools.
+            In this, and future mentions, this CSS rule is in the main .css file, 'style.css:'
+        </p>
+        <ul style="list-style-type: none">
+          <li>.app {
+          </li>
+          <li>display: flex;
+          </li>
+          <li>}
+          </li>
+        </ul>
+            The rule works as-is with Chrome 29+, IE 11+, and Mozilla 28+. To support Safari, the '-webkit-' prefix MUST be added: (Note the class selector, as mentioned earlier.)
+        <ul style="list-style-type:none">
+          <li>.app {
+          </li>
+          <li>display: -webkit-flex;
+          </li>
+          <li>display: flex;
+          </li>
+          <li>}
+          </li>
+        </ul>
+        <h3><span class="bling">Box Sizing</span>
+        </h3>
+        <span class="highlighter">4 main points:</span>
+        <ol>
+          <li>HTML elements are boxes and each box has 4 components.
+          </li>
+          <li>Because there are so many components to a box, it can often be hard to get the size of a box just right.
+          </li>
+          <li>Two techniques you can use to deal with sizing issues:
+            <ul>
+              <li>Set sizes in terms of percentages vs. pixels
+              </li>
+              <li>Set box-sizing attribute to border-box for every element (mentioned above)
+              </li>
+            </ul>
+          </li>
+          <li>Different browsers differ slightly, one to the other, so this can cause some to display the same code differently.
+          </li>
+        </ol>
+      </div>
+      <div class="rightpane">
+        <h3 class="bling">Box Positioning
+        </h3>
+        <ul style="list-style-type: circle">
+          <li>&lt;div&gt;'s are BLOCK elements (as opposed to inline) so, by default, they take up the entire width of a page.
+          </li>
+          <li>Adding the rule 'display: flex;' to the appropriate CSS will over-ride this behaviour and let &lt;div&gt;'s appear next to each other.
+          </li>
+        </ul>
+        <h4 class="highlighter">Adding Images
+        </h4>
+        <ul style="list-style-type: circle">
+          <li>You have to store the image somewhere that the page can access it.</li>
+          <li>You can add the image to the page with the 'img' tag and providing the source ('src') of the image.</li>
+          <li>You should always make sure to add your 'alt' attribute, to display alternate info in case your image doesn't display.</li>
+        </ul>
+        <h4>This is a diagram of the CSS Box Model:
+        </h4>
+        <img src="https://raw.githubusercontent.com/Zwee/Project/master/BoxSizeCSS.jpg" alt="example of .class-name">
+        <h5>This will make more sense as we move along, promise!
+        </h5>
+      </div>
+      <table class="footer">
+        <tr>
+          <td class="prevpg"><a href="Pg8.html#"><span class="bling">Previous Page</span></a>
+          </td>
+          <td class="mainpg"><a href="Pg0index.html#">Main Page</a>
+          </td>
+          <td class="nextpg"><a href="Pg10.html#"><span class="bling">Next Page</span></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+
+<!DOCTYPE HTML>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      Z Learns Pg7
+    </title>
+  </head>
+  <body>
+    <div class="container1">
+      <h1 class="title">
+        Adding CSS to Your Site / Understanding CSS Elements
+      </h1>
+      <br><br>
+      <div class="leftpane">
+        <h2 class="bling">3 Ways to Add CSS Styling:
+        </h2>
+        <ol>
+          <li><span class="highlighter">Write CSS in the &#60;head&#62; of your HTML</span>
+            <ul>
+              <li>at top of HTML container, add "head"
+              </li>
+              <li>Inside &#60;head&#62;, add a &#60;style&#62; element
+              </li>
+              <li>Write your CSS in the &#60;style&#62; element, then put HTML for the rest of your page below
+              </li>
+              <li>This is good for small projects, like from scratchpad.
+              </li>
+            </ul>
+          </li>
+            <li><span class="highlighter">Have a a CSS file to accompany your HMTL file(s):</span>
+              <ul style="list-style-type: circle">
+                <li>Write all structure HTML in 1 file (e.g.: main.html)
+                </li>
+                <li>In separate file (main.css) put in all your CSS code
+                </li>
+                <li>Add &#60;head&#62; at top of your HTML
+                </li>
+                <li>Add &#60;link&#62; inside &#60;head&#62;
+                  <ul style="list-style-type: none">
+                    <li>(Remember: &#60;link&#62; is a void tag)</li>
+                  </ul>
+                </li>
+                <li>Add these attributes to your &#60;link&#62;:
+                  <ul style="list-style-type: none">
+                    <li>rel="stylesheet"
+                    </li>
+                    <li>href="main.css"
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          <li><span class="highlighter">Write your style inline with your HTML</span>
+            <ul style="list-style-type: none">
+              <li>This is usually a bad idea as it leads to a LOT of repetition and makes for very unsightly code. However, you may still see code that uses this method, so it's good to be familiar with it. With this method, you modify the style attributes of every individual HTML element.
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <span class="bling">Some things to remember:
+        </span>
+        <p>There are a lot of little mistakes you can and will make at some point that will cause any of these methods not to work.
+        <span class="highligher">E.g.:</span> writing code using 2)(above) with main.html and main.css in different folders on your computer.
+        </p>
+        <h5>(Hint: this doesn't work at all.)
+        </h5>
+        <span class="highlighter">Did you know:</span>
+        You will have a higher HTML:CSS code ratio than you might think.
+        <p>This should make sense if you think of the difference this way: that HTML is the body, CSS is just the presentation. It only takes a little code to make big visual impacts.
+        </p>
+       <p>
+        Remember: When 'calling' (typing into code) an element (like body) does not get a . in front of it.
+        Class names get a . in front when calling.
+        </p>
+      </div>
+      <div class="rightpane">
+        <h2 class="bling">Understanding div, span, id, and class
+        </h2>
+        <span class="highlighter">&lt;div&gt; is a block.
+        </span>
+        <p>
+        Think: 'div-ides into boxes'. You can also think of "div"-ider tabs in a file cabinet or binder...they have labels, names, contents.
+        </p>
+        <span class="highlighter">&lt;span&gt;'s
+        </span>
+        <p>Are used for text decorations,  and only change things inline. Spans do not affect their layout.   **Span controls anything else inline that you want to change, without affecting the layout of the page.
+        </p>
+        <span class="bling">Semantic Elements and Tags
+        </span>
+        <ul style="list-style-type: circle">
+          <li>Changing the visual properties of an element only changes how the element is displayed; it does not change the element itself or what kind of element it is.
+          </li>
+          <li>Be sure to choose the correct type of element for cetain parts of a page, depending on what the purpose of that element is. (Using MyApp demo file as e.g.) The title at the top of the page is just the text giving the user an understanding of what's on the page, so you should be using a tag that provides such information.
+          </li>
+          <li>Think of the elements to choose from when making a MS Word doc. (headers, footers, titles, headings, etc.) They all have specific attributes that are going to be consistent every time you use them. In HTML they're simply referred to as h1, h2, etc.
+          </li>
+          <li>Search engines also use headings to index the structure and content of a web page.
+          </li>
+        </ul>
+        <h4 class="highlighter">Examples from Video, ref. 'My App Demo'
+        </h4>
+        (ref. My App demo, line 8)
+        <p>While &lt;div&gt; is totally fine to use here, the more appropriate tag to use, based on desired effect, is &lt;h1&gt;.
+        &lt;div&gt; gave us a box but &lt;h1&gt; gave us a box with bold and larger font, with less code. (clean is good!)
+        </p>
+        <table class="footer">
+          <tr>
+            <td class="prevpg"><a href="Pg6.html#"><span class="bling">Previous Page</span></a></td>
+            <td class="mainpg"><a href="Pg0index.html#">Main Page</a></td>
+            <td class="nextpg"><a href="Pg8.html#"><span class="bling">Next Page</span></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      Z Learns Pg6
+    </title>
+  </head>
+  <body>
+    <div class="container1">
+      <h1 class="title">
+        CSS Rules
+      </h1>
+      <br><br>
+      <div class="leftpane">
+        <h2 class="bling">How CSS rules are weighted:
+        </h2>
+
+        <span class="highlighter">Analogy: US Legal System v. 4 yr old kid.
+        </span>
+        <p>In CSS, the most specific rule is applied to every element.
+  <br>
+        Federal (most broad) -> State -> Municipal -> Your Family (most specific)
+  <br>
+        (least weight).............->.........->................-> (most weight)
+  <br><br>
+        The house rules are going to be the ones that the kid lives by regularly, with very little impact felt from any Federal rules. The kid is more worried about crossing Mum & Dad than they are about crossing the President. (Terrible analogy, sue me.)
+        Basically, National rules would have the weight of House rules, and vice versa, if the US was controlled like CSS.
+      </p>
+      <span class="bling">This hierarchy is what is meant with the word 'Cascading'.
+      </span>
+      <p>
+          You go down as far as you need to do into the rules until you find the cone that best describes the elements, then that rule is applied.
+          There is no need to memorise all possible attributes and values.
+          Instead, one should get comfortable looking up CSS documentation.
+          As my mate is fond of saying:
+          "You don't need to know everything. You just need to know how to look everything up."
+          It also matters where you define the rules and the order in which they are applied.
+        </p>
+        <h3 class="bling">About Class
+        </h3>
+        <span class="highlighter">When 'calling an element' (typing into code):
+        </span>
+        <p>We refer to a HTML element's class name by '.class-name'. Also note how we can apply rules to all &lt;div&gt;'s or just certain &lt;div&gt;'s by using the appropriate selector.
+        </p>
+      </div>
+      <div class="rightpane">
+          <img src="https://raw.githubusercontent.com/Zwee/Project/master/css-selectors-properties.jpg" alt="example of .class-name">
+          <p><span class="bling">An element (like 'body') does not get a '.' in front of it. This is only for class names.
+          </span>
+  <br>
+          <span class="highlighter">Note:
+          </span>
+          In &#60;style&#62; element we refer to a HTML element's class name by writing .class-name
+          Also note how we can apply rules to all divs or just certain divs by using the appropriate selector.
+          </p>
+          <span class="highlighter">e.g.:</span>
+          <ul style="list-style-type: none">
+            <li>.center {
+            </li>
+            <li>text-align: center;
+            </li>
+            <li>color: red;
+            </li>
+            <li>}
+            </li>
+          </ul>
+          <b>means all HTML elements with class 'center' will be red and center aligned.</b>
+        <table class="footer">
+          <tr>
+            <td class="prevpg"><a href="Pg5.html#"><span class="bling">Previous Page</span></a></td>
+            <td class="mainpg"><a href="Pg0index.html#">Main Page</a></td>
+            <td class="nextpg"><a href="Pg7.html#"><span class="bling">Next Page</span></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      Zwee Learns Page8
+    </title>
+  </head>
+  <body>
+    <div class="container1">
+      <h1 class="title">
+        Box Sizes: How to See Them, How to Change Them
+      </h1>
+      <br><br>
+        <div class="leftpane">
+          <h2 class="bling">Box Sizing Hint:
+          </h2>
+          <span class="highlighter">Consider this style:</span>
+  <br><br>
+          <span class="bling">{ box-sizing: border-box;}
+          </span>
+          <p>This is something you would use to know how much space a given element will take, on any chosen screen. It calculates/changes the sizing of elements so you can see for yourself. This makes the calculation of the element size include both the border AND padding so that it is easier to make layouts. You set the width of the overall box, and the box will stay the same, regardless of padding or border tweaks you make later. Remember, when using this box-sizing trick, that the margin is NOT included in the size.
+          </p>
+          <span class="highlighter">AND there's a catch:   (Isn't there always a catch?)</span>
+          <p>
+            This model is a fairly recent development, so some extra work is needed to be sure that older browsers can display your work.
+          <span class="highlighter">You will need to add what's called 'browser specific prefixes.'</span>
+          </p>
+          <ul style="list-style-type: none">
+            <li><span class="bling">They are:</span>
+              <ul style="list-style-type: none">
+                <li>-webkit (for Chrome and Safari)
+                </li>
+                <li>-moz (for Firefox)
+                </li>
+                <li>-ms (for IE)
+                </li>
+              </ul>
+            </li>
+            <li><span class="highlighter">(They all include the - in front of them.)</span>
+            </li>
+          </ul>
+          <p>You just add them IN FRONT of the style definition. It looks like this:
+          </p>
+          <ul style="list-style-type:none">
+            <li>* {
+            </li>
+            <li>-webkit-box-sizing: border-box;
+            </li>
+            <li>-moz-box-sizing: border-box;
+            </li>
+            <li>-ms-box-sizing: border-box;
+            </li>
+            <li>box-sizing: border-box;
+            </li>
+            <li>}
+            </li>
+          </ul>
+        </div>
+        <div class="rightpane">
+          <h2 class="bling">Setting Size / Positioning
+          </h2>
+           So far in the lesson, size has been shown in pixels, but there are a few ways to define size:
+
+          <ul style="list-style-type: circle">
+            <li><span class="highlighter">percentage:</span> (responds/relies on screen size)
+              The size WILL change depending on the size of the screen or how encompassing the boxes are.</li>
+            <li><span class="highlighter">pixels:</span>
+              (stays the same,regardless of screen size)
+
+              The element WILL NOT change, no matter how big or small the display screen is. This can sometimes lease to a bad user experience.</li>
+            <li><span class="highlighter">max width:</span>
+
+              In this case, the element WILL resize and become smaller when necessary, but it will NOT go larger than the set max width.</li>
+          </ul>
+          <h3 class="bling">About Positioning:
+          </h3>
+          <ul style="list-style-type: none">
+            <li><Span class="highlighter">Good News:</span> There is a lot of power in CSS to position elements
+            </li>
+            <li><Span class="highlighter">Bad News:</span> This is probably one of the most complicated concepts about CSS
+            </li>
+          </ul>
+
+          <h4>One powerful technique to use is called <span class="highlighter">Flex Box Layout</span>
+          </h4>
+          <p>'Flexbox' means 'flexible box' and it provides an efficient way to lay out, align, and distribute space among items in a container ('div').
+          </p>
+          <p><span class="highlighter">Using our MY APP exercise:</span>
+          In our mock-up, we have our image next to our description. If you'd like several elements to be next to each other, you can change the 'display' attribute of the Parent Container to value 'flex'.
+          </p>
+          <p>In our My App exercise, we have our parent div class 'app'. In &#60;div class="app"&#62; (clicked to highlight in Dev. Tools.) we can click to R side of dev tools screen, under 'styles' tab, next to 'element.style {...' we'll add the rule 'display: flex' to the element style, and we should get the child elements trying to align next to each other. For it to work, you also have to give the items a size that is SMALLER than 100% (default).
+          </p>
+          <span class="highlighter">E.g.:</span>
+          <ul style="list-style-type:none">
+            <li>element.style {
+            </li>
+		        <li>display: flex;
+            </li>
+		        <li>}
+            </li>
+          </ul>
+          <table class="footer">
+            <tr>
+              <td class="prevpg"><a href="Pg7.html#"><span class="bling">Previous Page</span></a>
+              </td>
+              <td class="mainpg"><a href="Pg0index.html#">Main Page</a>
+              </td>
+              <td class="nextpg"><a href="Pg9.html#"><span class="bling">Next Page</span></a>
+              </td>
+            </tr>
+          </table>
+         </div>
+       </div>
+     </body>
+    </html>

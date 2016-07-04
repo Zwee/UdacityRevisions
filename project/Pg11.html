@@ -1,0 +1,115 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+      Z Learns Pg11
+    </title>
+  </head>
+  <body>
+    <div class="container1">
+      <h1 class="title">
+        Summary & Info From Live Coding Session Video
+      </h1>
+      <br><br>
+      <div class="leftpane">
+        <h2><span class="bling">HINTS:</span>
+        </h2>
+        <span class="highlighter">Practise and don't be afraid!!</span>
+
+  <br><br>
+        <span class="bling">Use Github and start practising Version Control.</span>
+        <p>
+          After making a lot of changes you might lose track of where you are. Version Control can save your butt if you think some code's gone missing, or if you can't recall what the last big change was.
+        </p>
+        <span class="highlighter"><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">Here's a link to Git's article about Version Control, what it is, how it can help you, and how to start implementing it.</a></span>
+  <br><br>
+        <span class="bling">Add style (like previously with the My App exercise mock-up) so you can see the boxes while you tweak your code.
+        </span>
+        <p>
+          It makes the various elements easier to see, and you just take this little bit of style out and the visual aid goes away. It also adds shading that we didn't use previously, but is a huge help to see overlap in boxes:
+        </p>
+        <ul style="list-style-type: none">
+          <li>&lt;style&gt;
+          </li>
+          <li>&#42; &#123;
+          </li>
+          <li>margin&#58; 8px&#59;
+          </li>
+          <li>border&#58; red solid 2px&#59;
+          </li>
+          <li>background-color&#58; rgba(0,0,0,0,15)&#59;
+          </li>
+          <li>&#125;
+          </li>
+          <li>&lt;&#47;style&gt;
+            <ul>
+              <li><span class="highlighter">Note: The 'a' in 'rgba' is for Alpha (transparency), so the '15' value (above) is the transparency level.</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+          <h3><span class="bling">Live Coding Session:</span>
+          </h3>
+            Hint for figuring out layout of content and structural choices before coding:
+            map out your content on paper, or use Word/Google Docs/etc...
+  <br>
+            -the indenting and punctuation/headers/etc will start to give you ideas about where your content will look best. It's an organic, very visual approach and can make a river of content seem less daunting to place neatly on your page.
+  <br>
+            -It'll help you decide what's going to be nested, and why.
+        <p><span class="highlighter">&lt;p&gt;</span> bascially just tells the browser that you intend this to be a bunch of text (hence Paragraph)
+        -It's OK to have 'special text' (like a href url...) to add links and images. It's still a paragraph.
+        Trick:
+        If some indentation is wonky, do this to make them all even:
+        highlight the off-kilter lines, then hit TAB. They'll pop inline inwards.
+        If you use shift + TAB they'll pop outwards.
+
+        <span class="highlighter">&lt;div&gt;</span> basically just makes sure stuff inside has a box. It doesn't really have any special inate values.
+        </p>
+      </div>
+      <div class="rightpane">
+        <h2><span class="bling">Final Notes:</span>
+        </h2>
+        <h4 class="highlighter">Question: Why is my picture not being styled correctly when I put it in a div and then style the div?
+        </h4>
+        <p>
+          A: &lt;img&gt; is an element in itself, Add its style to it, not the div before it. Make sure you're putting the style where it needs to be and make sure you grok where it's supposed to go.
+        </p>
+        <h4>How to center an image in CSS:
+        </h4>
+        <ul style="list-style-type: none">
+          <li>.image-container {
+          </li>
+          <li>text-align: center;
+          </li>
+          <li>}
+          <li>
+        </ul>
+        <h5>(Found using google search for 'how to center image in css.
+        Remember: every element has to have its own box.)
+        </h5>
+        <h4 class="bling">Final reminder:
+        </h4>
+        <p>
+          When going through your code, look at your CSS and ask "what do these things have in common, and how can I style just that?" and "How can I remove code that repeats itself?"
+          When checking and troubleshooting, remember to start by checking for unclosed tags. It's a simple, common mistake.
+
+          Don't Forget:
+          If you're playing around with code and don't want to accidentally cut out something you might want to put back in later, just comment it out, then either delete it or uncomment it later once you've decided what you like.
+        </p>
+      </div>
+      <table class="footer">
+        <tr>
+          <td class="prevpg"><a href="Pg10.html#"><span class="bling">Previous Page</span></a>
+          </td>
+          <td class="mainpg"><a href="Pg0index.html#">Main Page</a>
+          </td>
+          <td class="nextpg"><a href="Pg1.html#"><span class="bling">Back to Page 1</span></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

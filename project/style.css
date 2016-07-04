@@ -1,0 +1,155 @@
+ /* This is a CSS comment. Notice that CSS comments are
+enclosed by different characters than HTML comments. */
+
+/* CSS allows you to give your page style (colors, shapes, fonts, etc.)
+You can apply CSS elements to entire HTML classes. Review Lesson 1.3
+if you need a refresher about how to do this.
+*/
+
+
+.style {
+  	display: flex;
+    display: -webkit-flex;
+  }
+
+  * {  /* Research later: why we get this CSSLint Warning:
+          The universal selector (*) is known to be slow.at line 13 col 3 in Portfolio\Assignment - Stage1\project\style.css */
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      /* Research later: why we get this CSSLint Warning:
+      The box-sizing property isn't supported in IE6 and IE7.at line 18 col 7 in Portfolio\Assignment - Stage1\project\style.css */
+  }
+
+  body {
+    width: 100%;
+  	height: 100%;
+    background-color: white;
+    font-family: arial;
+  }
+
+  .title {
+    background: repeating-linear-gradient(45deg, #C0C0C0, #FFFFFF, #C0C0C0);
+    color: #0065CC;
+    text-align: center;
+    padding: 10px 10px;
+    max-width: 75%;
+    margin: 0 auto;
+    font-weight: bolder;
+    border: 5px outset #FF9933;
+    border-radius: 20px;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: #0065CC;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+
+  .mainpage {
+	  color: #0065CC;
+	  padding: 20px;
+    max-width: 85%;
+    margin-left: 10%;
+    margin-right:10%;
+    display: flex;
+  }
+
+  .about {
+    color: #0065CC;
+    padding: 10px 60px;
+    float: left;
+  }
+
+ .findstuff {
+   margin: 5px;
+   padding: 10px 7px 10px 30px;
+   font-weight: bolder;
+   border-radius: 20px;
+   background: repeating-linear-gradient(45deg, #C0C0C0, #FFFFFF, #C0C0C0);
+   color: #0065CC;
+   border: 5px outset #FF9933;
+ }
+
+  td {
+    text-align: center;
+    padding: 10px;
+  }
+
+  a:link {
+  color: #0065CC;
+  }
+  a:visited {
+  color: #AA66CC;
+  }
+  a:hover {
+  color: #FF9933;
+  }
+
+  .glossary {
+    color: #0065CC;
+    padding: 10px 50px;
+    float: right;
+  }
+
+.leftpane {
+  margin-left: 20px;
+  padding: 10px 20px;
+  max-width: 45%;
+  float: left;
+  border-radius: 20px;
+  background: repeating-linear-gradient(45deg, #C0C0C0, #FFFFFF, #C0C0C0);
+  color: #0065CC;
+  border: 5px outset #FF9933;
+  }
+
+  .leftpane img {
+    position: relative;
+    display: inline-block;
+    max-width: 750px;
+  }
+
+.rightpane img {
+    max-width: 500px;
+    max-height: 300px;
+  }
+
+.rightpane {
+  color: #0065CC;
+  padding: 10px 10px;
+  max-width: 750px;
+  margin-right: 2%;
+  float: right;
+}
+
+  .footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 6px ridge #FF9933;
+  border-radius: 20px;
+  background: repeating-linear-gradient(45deg, #C0C0C0, #FFFFFF, #C0C0C0);
+  text-align: center;
+  width: 35%;
+  margin-left: 30%;
+  margin-right: 25%;
+}
+
+  .bling {
+    text-shadow: 4px 4px 2px #FF9933;
+    text-decoration: overline;
+    font-weight: bold;
+  }
+
+  .highlighter {
+    background-color: #FFCA97;
+  }
+
+  iframe {
+     width: 560px;
+     height: 315px;
+   }
